@@ -11,7 +11,7 @@ Url:		http://search.cpan.org/dist/%{realname}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 BuildRequires:	perl(Text::vFile::asData)
-
+BuildRequires:	perl(File::Slurp)
 BuildArch: noarch
 
 %description
