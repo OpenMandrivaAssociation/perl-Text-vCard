@@ -5,7 +5,7 @@ Version:    2.00
 Release:    %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
-Summary:    A package to edit and create a single vCard (RFC 2426) 
+Summary:    A package that provides APIs to work with single or multiple vCards (RFC 2426) 
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
