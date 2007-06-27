@@ -5,7 +5,7 @@ Version:    2.00
 Release:    %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
-Summary:    A package to edit and create a single vCard (RFC 2426)
+Summary:    A package to edit and create a single vCard (RFC 2426) 
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -15,16 +15,17 @@ BuildRequires:	perl(File::Slurp)
 BuildArch: noarch
 
 %description
-A vCard is an electronic business card.
+A vCard is an electronic business card, containing information on a
+person, a record, a set of address information, and more.
 
-This package is for a single vCard (person / record / set of address 
-information). It provides an API to editing and creating vCards, or 
-supplied a specific piece of the Text::vFile::asData results it generates 
-a vCard with that content.
+This package contains two related APIs:
+ - Text::vCard, to create or edit a single vCard
+ - Text::vCard::Addressbook, to work with multiple vCards
 
-You should really use Text::vCard::Addressbook as this handles creating vCards 
-from an existing file for you.
-
+Text::vCard can also use data read through Text::vFile::asData to
+generate a vCard with that content. It is recommended to use
+Text::vCard::Addressbook, as it handles creating vCards from an existing
+file for you.
 %prep
 %setup -q -n Text-vCard-%{version} 
 
@@ -45,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc Changes
-%{perl_vendorlib}/*
+%{perl_vendorlib}/Text/*
 %{_mandir}/man3/*
