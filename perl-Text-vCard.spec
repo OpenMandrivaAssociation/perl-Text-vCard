@@ -1,8 +1,8 @@
 %define realname   Text-vCard
 
 Name:		perl-%{realname}
-Version:    2.00
-Release:    %mkrel 2
+Version:    2.01
+Release:    %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:    A package that provides APIs to work with single or multiple vCards (RFC 2426) 
