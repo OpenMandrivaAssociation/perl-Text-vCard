@@ -8,7 +8,6 @@ Group:		Development/Perl
 Summary:    A package that provides APIs to work with single or multiple vCards (RFC 2426) 
 Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	perl-devel
 BuildRequires:	perl(Text::vFile::asData)
 BuildRequires:	perl(File::Slurp)
