@@ -1,7 +1,7 @@
 %define realname   Text-vCard
 
 Name:		perl-%{realname}
-Version:    2.01
+Version:    2.03
 Release:    %mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
