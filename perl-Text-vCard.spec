@@ -2,7 +2,7 @@
 
 Name:		perl-%{realname}
 Version:    2.03
-Release:    %mkrel 1
+Release:    %mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:    A package that provides APIs to work with single or multiple vCards (RFC 2426) 
