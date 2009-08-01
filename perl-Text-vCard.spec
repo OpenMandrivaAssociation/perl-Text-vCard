@@ -1,18 +1,20 @@
-%define realname   Text-vCard
+%define upstream_name    Text-vCard
+%define upstream_version 2.03
 
-Name:		perl-%{realname}
-Version:    2.03
-Release:    %mkrel 2
-License:	GPL or Artistic
-Group:		Development/Perl
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    A package that provides APIs to work with single or multiple vCards (RFC 2426) 
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{realname}
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	perl-devel
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{upstream_version}.tar.bz2
+
 BuildRequires:	perl(Text::vFile::asData)
 BuildRequires:	perl(File::Slurp)
 BuildArch: noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 A vCard is an electronic business card, containing information on a
@@ -26,8 +28,9 @@ Text::vCard can also use data read through Text::vFile::asData to
 generate a vCard with that content. It is recommended to use
 Text::vCard::Addressbook, as it handles creating vCards from an existing
 file for you.
+
 %prep
-%setup -q -n Text-vCard-%{version} 
+%setup -q -n Text-vCard-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
