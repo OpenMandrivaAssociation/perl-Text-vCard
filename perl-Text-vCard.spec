@@ -1,5 +1,5 @@
 %define upstream_name    Text-vCard
-%define upstream_version 2.03
+%define upstream_version 2.04
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:    A package that provides APIs to work with single or multiple vCards 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{upstream_version}.tar.bz2
+Source0:    ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{upstream_version}.tar.gz
 
 BuildRequires:	perl(Text::vFile::asData)
 BuildRequires:	perl(File::Slurp)
@@ -37,7 +37,7 @@ file for you.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf $RPM_BUILD_ROOT
