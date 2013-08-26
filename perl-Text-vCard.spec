@@ -1,19 +1,20 @@
 %define upstream_name    Text-vCard
-%define upstream_version 2.10
+%define upstream_version 2.13
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	A package that provides APIs to work with single or multiple vCards (RFC 2426) 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Text/Text-vCard-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Text/Text-vCard-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Text::vFile::asData)
 BuildRequires:	perl(File::Slurp)
+BuildRequires:	perl(Digest::SHA)
 BuildArch:	noarch
 
 %description
@@ -107,3 +108,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed May 23 2007 Michael Scherer <misc@mandriva.org> 2.00-1mdv2008.0
 - First Mandriva package
+
