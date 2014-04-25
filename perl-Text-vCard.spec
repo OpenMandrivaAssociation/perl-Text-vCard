@@ -13,6 +13,9 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(Unicode::LineBreak)
+BuildRequires: perl(Test::Most)
+BuildRequires: perl(Path::Tiny)
 BuildRequires:	perl(Text::vFile::asData)
 BuildRequires:	perl(File::Slurp)
 BuildRequires:	perl(Digest::SHA)
