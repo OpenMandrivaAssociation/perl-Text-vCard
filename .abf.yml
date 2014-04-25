@@ -1,4 +1,5 @@
 removed_sources:
   Text-vCard-2.10.tar.gz: 228a001c966da78ad8132ea1e61b313245723572
-sources:
   Text-vCard-2.13.tar.gz: d46f233fad10c7d96873ad83ad2a2323c3bf52f8
+sources:
+  Text-vCard-3.02.tar.gz: a1612e7224745b97e7043222b3072487aac0af8b
