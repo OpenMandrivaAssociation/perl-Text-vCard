@@ -8,7 +8,7 @@ Release:	3
 Summary:	A package that provides APIs to work with single or multiple vCards (RFC 2426) 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Text/Text-vCard-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
